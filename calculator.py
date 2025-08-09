@@ -11,7 +11,7 @@ TEMPLATE = """
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Button Calculator</title>
+    <title>Flaskulator</title>
     <style>
       body { font-family: system-ui, sans-serif; max-width: 360px; margin: 2rem auto; }
       .display { width: 100%; font-size: 1.5rem; text-align: right; padding: .5rem; margin-bottom: .75rem; }
@@ -20,10 +20,11 @@ TEMPLATE = """
       .op { background: #eee; }
       .eq { background: #cde; }
       .clr { background: #f6c; }
+      h2 { text-align: center; }
     </style>
   </head>
   <body>
-    <h2>Calculator</h2>
+    <h2>Flaskulator</h2>
 
     <form method="post">
       <input type="hidden" name="expr" value="{{ expr }}">
